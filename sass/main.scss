@@ -1,0 +1,90 @@
+// Variables
+$desktop-width: 1440px;
+$mobile-width: 375px;
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$dark-cyan: hsl(179, 100%, 13%);
+$trans-white: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+
+// Resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Utility
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+  border: 2px solid $light-gray;
+  border-radius: 20px;
+  padding: 10px 24px;
+  color: $light-gray;
+  transition: color 250ms, background-color 250ms;
+}
+
+body {
+  font-size: 15px;
+  background-color: $light-gray;
+}
+.container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.cards-container {
+  max-width: 864px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.card {
+  padding: 3rem 2rem;
+  
+  h2 {
+    margin: 1.2rem 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: $light-gray;
+  }
+
+  p {
+    color: $trans-white;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 100px;
+  }
+}
+
+.card-1 {
+  background-color: $orange;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  .btn:hover {
+    color: $orange;
+    background-color: $light-gray;
+  }
+}
+.card-2 {
+  background-color: $cyan;
+
+  .btn:hover {
+    color: $cyan;
+    background-color: $light-gray;
+  }
+}
+.card-3 {
+  background-color: $dark-cyan;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  .btn:hover {
+    color: $dark-cyan;
+    background-color: $light-gray;
+  }
+}
