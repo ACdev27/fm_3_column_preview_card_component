@@ -11,7 +11,7 @@
   border: 2px solid #f2f2f2;
   border-radius: 20px;
   padding: 10px 24px;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
   transition: color 250ms, background-color 250ms;
 }
 
@@ -22,7 +22,7 @@ body {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .cards-container {
@@ -30,13 +30,14 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .card {
-  padding: 3rem 2rem;
+  padding: 2.7rem 2rem;
 }
 .card h2 {
-  margin: 1.2rem 0;
+  margin: 1.5rem 0;
   font-family: "Big Shoulders Display", cursive;
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -48,23 +49,25 @@ body {
   line-height: 1.5;
   margin-bottom: 100px;
 }
+.card .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
 
 .card-1 {
   background-color: #e38826;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-.card-1 .btn:hover {
+.card-1 .btn {
   color: #e38826;
-  background-color: #f2f2f2;
 }
 
 .card-2 {
   background-color: #006970;
 }
-.card-2 .btn:hover {
+.card-2 .btn {
   color: #006970;
-  background-color: #f2f2f2;
 }
 
 .card-3 {
@@ -72,9 +75,35 @@ body {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.card-3 .btn:hover {
+.card-3 .btn {
   color: #004241;
-  background-color: #f2f2f2;
+}
+
+@media (max-width: 665px) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card p {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 375px) {
+  .card p {
+    margin-bottom: 27px;
+  }
+
+  .card-1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+
+  .card-3 {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

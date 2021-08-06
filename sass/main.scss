@@ -1,5 +1,6 @@
 // Variables
 $desktop-width: 1440px;
+$tablet-width: 665px;
 $mobile-width: 375px;
 $orange: hsl(31, 77%, 52%);
 $cyan: hsl(184, 100%, 22%);
@@ -22,7 +23,7 @@ $light-gray: hsl(0, 0%, 95%);
   border: 2px solid $light-gray;
   border-radius: 20px;
   padding: 10px 24px;
-  color: $light-gray;
+  background-color: $light-gray;
   transition: color 250ms, background-color 250ms;
 }
 
@@ -32,7 +33,7 @@ body {
 }
 .container {
   max-width: $desktop-width;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .cards-container {
@@ -40,12 +41,13 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 .card {
-  padding: 3rem 2rem;
+  padding: 2.7rem 2rem;
   
   h2 {
-    margin: 1.2rem 0;
+    margin: 1.5rem 0;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -58,33 +60,59 @@ body {
     line-height: 1.5;
     margin-bottom: 100px;
   }
+  .btn:hover {
+    color: $light-gray;
+    background-color: transparent;
+  }
+
 }
 
 .card-1 {
   background-color: $orange;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-
-  .btn:hover {
+  .btn {
     color: $orange;
-    background-color: $light-gray;
   }
+
 }
 .card-2 {
   background-color: $cyan;
-
-  .btn:hover {
-    color: $cyan;
-    background-color: $light-gray;
+  .btn {
+  color: $cyan;
   }
+
 }
 .card-3 {
   background-color: $dark-cyan;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-
-  .btn:hover {
-    color: $dark-cyan;
-    background-color: $light-gray;
+  .btn {
+  color: $dark-cyan;
   }
+}
+
+@media (max-width: $tablet-width) {
+  .cards-container {
+    flex-direction: column;
+  }
+  .card p {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: $mobile-width) {
+  .card p {
+    margin-bottom: 27px;
+  }
+  .card-1 {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+  .card-3 {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+
 }
