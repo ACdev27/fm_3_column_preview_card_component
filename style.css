@@ -87,11 +87,6 @@ body {
   .card p {
     margin-bottom: 45px;
   }
-}
-@media (max-width: 375px) {
-  .card p {
-    margin-bottom: 27px;
-  }
 
   .card-1 {
     border-top-left-radius: 8px;
@@ -103,6 +98,11 @@ body {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .card p {
+    margin-bottom: 27px;
   }
 }
 

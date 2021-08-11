@@ -99,11 +99,6 @@ body {
   .card p {
     margin-bottom: 45px;
   }
-}
-@media (max-width: $mobile-width) {
-  .card p {
-    margin-bottom: 27px;
-  }
   .card-1 {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 0px;
@@ -114,5 +109,12 @@ body {
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
   }
+}
+
+@media (max-width: $mobile-width) {
+  .card p {
+    margin-bottom: 27px;
+  }
+
 
 }
