@@ -10,7 +10,7 @@
   font-family: "Lexend Deca", sans-serif;
   border: 2px solid #f2f2f2;
   border-radius: 20px;
-  padding: 10px 24px;
+  padding: 12px 29px;
   background-color: #f2f2f2;
   transition: color 250ms, background-color 250ms;
 }
@@ -40,20 +40,20 @@ main {
 }
 
 .card {
-  padding: 2.7rem 2rem;
+  padding: 2.9rem 2rem;
 }
 .card h2 {
-  margin: 1.5rem 0;
+  margin: 1.6rem 0;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: #f2f2f2;
 }
 .card p {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  line-height: 1.5;
-  margin-bottom: 75px;
+  line-height: 1.7;
+  margin-bottom: 90px;
 }
 .card .btn:hover {
   color: #f2f2f2;
