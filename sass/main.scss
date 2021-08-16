@@ -32,16 +32,22 @@ body {
   font-size: 15px;
   background-color: $light-gray;
 }
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .container {
   max-width: $desktop-width;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .cards-container {
   max-width: 864px;
   display: flex;
   justify-content: center;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 .card {
