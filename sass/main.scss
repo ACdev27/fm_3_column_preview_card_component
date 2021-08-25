@@ -104,8 +104,12 @@ main {
 }
 
 @media (max-width: $tablet-width) {
+  main {
+    height: auto;
+  }
   .cards-container {
     flex-direction: column;
+    margin-top: 25px;
   }
   .card p {
     margin-bottom: 45px;
